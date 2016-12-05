@@ -9,12 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - Start Bootstrap Theme</title>
+    <title>Jerome Minney - Technologist | Entrepreneur | Educator </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
+
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -36,9 +37,8 @@
 
 <body id="page-top">
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <!-- <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
@@ -46,11 +46,10 @@
                 <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#help">Help</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Services</a>
@@ -63,77 +62,301 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+    </nav> -->
 
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+                <h1 id="homeHeading">HI, I'M JEROME </h1>
                 <hr>
-                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                <p>I enjoy creating value</p>
+                <p style="font-size:0.8em;">Press [spacebar to continue..] JM to code this story</p>
+                <!-- When user presses spacebar, trigger "animate" event, which will:
+                 - this = array of spans that constitute my story
+                 - this.newspan = this[i+1]
+                 - this.currentspan = this[i]
+                 - Translate the this.currentspan down by 100px, fading opacity from 1 to 0 (linearly?)
+                 - Load the this.newspan at the same location as the old this.currentspan, with "opacity: 0"
+                 - After the this.currentspan has moved down by the current line-height, fade in this.newspan
+                 - i++
+                 - I think the spans need an absolute positioning? -->
+
+
+
+
+                <!-- <a href="#help" class="btn btn-primary btn-xl page-scroll">Find Out More</a> -->
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
+<style>
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.header-content {
+  width: 70% !important; /*CLEAN THIS UP JEROME*/
+}
+
+.header-content, header .header-content .header-content-inner p {
+  color: rgba(0,0,0,0.7) !important;
+}
+
+.skillpilln {
+  border-bottom:2px solid white;
+  border-radius: 10px;
+  padding:0px 7px;
+  margin: 10px 5px;
+  display: inline-block;
+}
+
+.skillpill {
+  font-weight: 600 ;
+  color: black;
+}
+
+.skillpillo {
+  padding:0px 7px;
+  margin: 3px 5px;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.text-faded {
+  color: rgba(0,0,0,0.7);
+}
+
+#help p, #services p {
+  line-height: 2em;
+  margin: 40px auto;
+}
+
+.btn-default {
+  background-color: #ddd;
+}
+.btn-default:hover {
+  background-color: #F05F40 !important;
+  color:white !important;
+}
+.btn-default:focus{
+  outline: none;
+}
+
+</style>
+<style>
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 50vh;
+}
+
+.item {
+  padding-top:80px;
+}
+
+.testimonials {
+  padding-top: 50px;
+}
+
+/*.item:nth-child(1) {
+  background: #74C390;
+}
+.item:nth-child(2) {
+  background: #51BCE8;
+}
+.item:nth-child(3) {
+  background: #E46653;
+}*/
+
+.carousel-control {
+  background: none !important;
+}
+
+</style>
+
+
+    <section id="help">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-heading">Can I help you?</h2>
+                    <hr class="spacey">
+                    <p class="text-faded">Arrange a 15 minute skype and get connected directly</p>
+                    <a href="https://calendly.com/jeromeminney/15min" tabindex="-1" target="_blank" class="page-scroll btn btn-default btn-xl sr-button">
+                      View Availability
+                    </a>
+
+                    <!-- <p> <span class="text-faded">I could share my experience with:</span>
+                       <span class="skillpill">Product Management</span>,
+                       <span class="skillpill">Marketing</span>,
+                       <span class="skillpill">Brand Positioning</span>,
+                       <span class="skillpill">Introductions</span>, and any soft skills around entrepreneurship.</p> -->
+                    <p class="text-faded"><span>Ask me for advice on:</span>
+                       <span class="skillpill">starting technology companies</span>, and
+                       <span class="skillpill">getting them ready for growth</span>,
+                    </p>
+                    <!-- <p> <span class="text-faded">You might want to book me for:</span> -->
+                    <p class="text-faded"> <span>Book me for:</span>
+                      <span class="skillpill">web development</span>,
+                      <span class="skillpill">speaking engagements</span>,
+                      <span class="skillpill">business consultancy</span>,
+                      or <br/>kickstarting a new initiative at your company</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="bg-primary" id="services">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="section-heading">My recent experience</h2>
+                    <hr class="light primary">
+
+                    <p>Having Co-founded two software agencies - Mika Labs and Glass Creative - I have had 3 years of experience with most roles at a Digital Agency, from Biz Dev to Positioning, Consultancy, Workshops, Product Management, Web Development, Employment, Accounting, and Legal.</p>
+                    <p>Further, I Co-founded a funded tech startup, where I had responsibility for Product Management (mobile apps), Sales (to Restaurants), and Marketing/Positioning for the first year.</p>
+                    <p>By being an active listener, but also an educator for our potential clients, I was able to quickly build rapport within the network and generated all of Glass Creative’s leads except one, turning over more than £250k in the first year of trading with no previous brand, reputation, or portfolio.</p>
+              </div>
+          </div>
+      </div>
     </section>
+
+
+<!-- SECTION TAG MISSING BECAUSE IT BREAKS THE BG COLOR - FIX THIS -->
+        <!-- <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="active item">
+                <div class="col-md-2 col-md-offset-2">
+                  <img alt="" src="http://lorempixel.com/200/200" class="img-circle img-responsive" />
+                </div>
+                <div class="testimonials col-md-6">
+                  <p>1 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                  <p><small> - YAYO DUDEMOUS</small></p>
+                </div>
+              </div>
+                <div class="item">
+                  <div class="col-md-2 col-md-offset-2">
+                    <img alt="" src="http://lorempixel.com/200/200" class="img-circle img-responsive" />
+                  </div>
+                  <div class="testimonials col-md-6">
+                    <p>2 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><small> - YAYO DUDEMOUS</small></p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="col-md-2 col-md-offset-2">
+                    <img alt="" src="http://lorempixel.com/200/200" class="img-circle img-responsive" />
+                  </div>
+                  <div class="testimonials col-md-6">
+                    <p>3 Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><small> - YAYO DUDEMOUS</small></p>
+                  </div>
+                </div>
+            </div>
+            
+            <a class="carousel-control left" href="#carousel" data-slide="prev"></a>
+            <a class="carousel-control right" href="#carousel" data-slide="next"></a>
+        </div> -->
+
+
+
+
+    <!-- <section id="testimonials">
+      <div class="container" id="testimonials-row">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                <h2 class="section-heading">What others say</h2>
+                <hr class="primary">
+                  <div class="carousel slide" id="testimonials-rotate">
+                      <ol class="carousel-indicators">
+                          <li class="active" data-slide-to="0" data-target="#testimonials-rotate">
+                          </li>
+                          <li data-slide-to="1" data-target="#testimonials-rotate">
+                          </li>
+                          <li data-slide-to="2" data-target="#testimonials-rotate">
+                          </li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="item active">
+                              <div class="col-md-2"><img alt="" src="http://lorempixel.com/200/200" class="img-circle img-responsive" />
+                              </div>
+                              <div class="testimonials col-md-10">
+
+                                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. - <small> - YAYO DUDEMOUS</small>
+                                  </p>
+
+                              </div>
+
+                              <div class="clearfix"></div>
+                          </div>
+                          <div class="item">
+                              <div class="col-md-2"><img alt="" src="http://lorempixel.com/200/200" class="img-circle img-responsive" />
+                              </div>
+                              <div class="testimonials col-md-10">
+
+                                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. - <small> - YAYO DUDEMOUS</small></p>
+
+                              </div>
+
+                              <div class="clearfix"></div>
+                          </div>
+                          <div class="item">
+                              <div class="col-md-2"><img alt="" src="http://lorempixel.com/200/200" class="img-circle img-responsive" />
+                              </div>
+                              <div class="testimonials col-md-10">
+
+                                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. - <small> - YAYO DUDEMOUS</small></p>
+
+                              </div>
+
+                              <div class="clearfix"></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="pull-right">
+                      <a class="left" href="#testimonials-rotate" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                      <a class="right" href="#testimonials-rotate" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                      <div class="clearfix"></div>
+                  </div>
+              </div>
+          </div>
+          </p>
+      </div>
+      <!--end of container
+    </section> -->
+
+
+    <!-- THIS IS AN IMAGE GALLERY I CAN USE LATER
 
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
@@ -230,36 +453,18 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <aside class="bg-dark">
+
+    <!-- <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Free Download at Start Bootstrap!</h2>
                 <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a>
             </div>
         </div>
-    </aside>
+    </aside> -->
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
