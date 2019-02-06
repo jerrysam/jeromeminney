@@ -6,37 +6,45 @@
   max-height: 1000px;
   position: relative;
   color: @gray-text;
+  .row {
+    max-width: none;
+  }
   .container {
     max-height: 1000px;
   }
   .header-content {
-    top: 30%; // JMEDIT: Why is this % smaller on mobile?
-    width:70%; //overriding the normal row width here
-    text-align: left;
-    position: absolute;
-    margin-left: 15%;
-    .jmsubtitle {
-      font-size:22px;
-      line-height: 42px;
-      margin: 0 0 20px 0;
-      font-weight: bold;
-      color: rgba(0,0,0,0.5);
-    }
-    h2:after {
-      display: none;
-    }
-    .storyline {
-      display: inline-block;
-      transition: opacity @story_initiate_time linear @story_initiate_time;
-      .visible;
+      top: 30%; // JMEDIT: Why is this % smaller on mobile?
+      width:70%; //overriding the normal row width here
+      text-align: left;
       position: absolute;
-      margin: 0 0 20px 0;
-    }
-    .storyline_font {
-      font-size: 18px;
-      font-weight: 500;
-      color: rgba(0,0,0,0.5);
-    }
+      margin-left: 15%;
+      .jmsubtitle {
+        font-size:22px;
+        line-height: 42px;
+        margin: 0 0 20px 0;
+        font-weight: bold;
+        color: rgba(0,0,0,0.5);
+      }
+      h2:after {
+        display: none;
+      }
+      .storyline {
+        display: inline-block;
+        transition: opacity @story_initiate_time linear @story_initiate_time;
+        .visible;
+        position: absolute;
+        margin: 0 0 20px 0;
+      }
+      .storyline_font {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(0,0,0,0.5);
+      }
+      @media only screen and (max-width: @tabsize) {
+        .storyline {
+          display: none;
+        }
+      }
   }
 
     #chevron {
@@ -70,8 +78,8 @@
   z-index: -1;
   background-image: url('../images/header.jpg');
   .background-cover;
-  background-position: 70%;
-  height: 100%;
+  background-position: center;
+  height: 100vh;
 }
 
 .blur:before {
@@ -119,11 +127,23 @@
 // "Define" quote section
 #define {
   background-color: @theme-primary;
-  .quotes {
-  color: @theme-accent;
+  .row {
+    width: 100%;
   }
-  span {
+  .quotes {
+    color: @theme-accent;
+  }
+  #emphasis {
     color: @white;
+  }
+  #inline-block {
+    display: inline-block;
+  }
+  @media only screen and (max-width: @tabsize) {
+    .quotes {
+      max-width: 500px;
+      margin: auto;
+    }
   }
 }
 
@@ -187,14 +207,15 @@
   }
   @media only screen and (max-width: @tabsize) {
     img, .testimonial_container, .testim-right .testimonial_container, .testim-right img {
-      width: calc(1.5 * @tesim_img_width);
-      height: calc(1.5 * @tesim_img_width);
+      width: calc(1 * @tesim_img_width);
+      height: calc(1 * @tesim_img_width);
       margin: 10px auto;
       clear: both;
       float: none;
       text-align: center;
     }
-    .testimonial_container {
+    .testimonial_container,
+    .testim-right .testimonial_container {
       width:100%;
     }
   }
