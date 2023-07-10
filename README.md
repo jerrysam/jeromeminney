@@ -1,18 +1,4 @@
 # www.jeromeminney.com personal website
-See www.staging.jeromeminney.com for staging site
-See jeromeminney.com for live site
-
-## Other notes
- - Up the font weight and text size
- - Awwwards color palette for the four circles
- - Title text: font size and thickness increase
- - Decrease top&bottom section margin by 1/3
- - Show that I am validated to speak on these things at this level because x, y, and z
-
-Who am I?
-I don't believe in namedropping, just damn good quality with smart people
-Reputation on what I did for other people
-
 
 
 ## User testing notes
@@ -38,8 +24,19 @@ Reputation on what I did for other people
   The first line is too small, the rest are too large.. get them both in the middle
   From "yes I coded this animation myself", it sounds kinda pretentious, and the story frazzles out for all future lines from there.
 
+## Other peoples suggestions
+ - Up the font weight and text size
+ - Awwwards color palette for the four circles
+ - Title text: font size and thickness increase
+ - Decrease top&bottom section margin by 1/3
+ - Show that I am validated to speak on these things at this level because x, y, and z
+
+Who am I?
+I don't believe in namedropping, just damn good quality with smart people
+Reputation on what I did for other people
+
 ### Jerome's notes / ideas
-  Go back to your mantra's. You know, "open every door and go down the path of least resistance", "the theory of relative success", "no one knows anything about anything", "It's not about achieving your goal, it's about enjoying the journey"
+  Go back to your mantras. You know, "open every door and go down the path of least resistance", "the theory of relative success", "no one knows anything about anything", "It's not about achieving your goal, it's about enjoying the journey"
 
 ###Testimonials in the making
 People to ask:
@@ -65,18 +62,7 @@ People to ask:
  - Work with Stephen C?
 Need more:
  - Hard numbers on how I changed companies
- -
-
-
-
 
 ## Creator
 Website designed and developed by Jerome Minney
 
-Theme created by https://github.com/davidtmiller
-Framework is [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-
-## Copyright and License
-
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.

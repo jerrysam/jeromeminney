@@ -1,0 +1,243 @@
+@import "_variables.less";
+@import "_mixins.less";
+
+// Homepage Header
+
+//Hero1
+#hero1 {
+  height: 100%;
+  max-height: 1000px;
+  position: relative;
+  color: @gray-text;
+  .container {
+    max-height: 1000px;
+  }
+  .header-content {
+    top: 30%; // JMEDIT: Why is this % smaller on mobile?
+    text-align: left;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    .jmsubtitle {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 0 0 20px 0;
+      font-weight: bold;
+      color: rgba(0,0,0,0.5);
+    }
+    h2:after {
+      display: none;
+    }
+    .storyline {
+      display: inline-block;
+      transition: opacity @story_initiate_time linear @story_initiate_time;
+      .visible;
+      position: absolute;
+      margin: 0 0 20px 0;
+    }
+    .storyline_font {
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(0,0,0,0.5);
+    }
+  }
+
+    #chevron {
+      text-align: center;
+      position: absolute;
+      bottom:10%;
+      width: 100%;
+      max-width: 100%;
+      i {
+        color: rgba(0,0,0,0);
+        font-size:70px;
+        .transition-all
+      }
+      i:hover {
+        color: @theme-accent-faded;
+      }
+      .chevron_show {
+        color: rgba(0,0,0,0.6);
+      }
+    }
+}
+
+@story_initiate_time: 500ms;
+@newline_time: 250ms;
+
+#hero1:before {
+  transition: all @story_initiate_time linear;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url('../images/header.png');
+  .background-cover;
+  background-position: 60% bottom;
+  height: 100%;
+  opacity: 80%;
+}
+
+.blur:before {
+    transition: all @story_initiate_time linear;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+// Storyline
+.fadeup {
+  transition: all @story_initiate_time linear;
+}
+.newline {
+  transition: all @newline_time linear;
+  .visible;
+  font-size: 22px;
+  line-height: 42px;
+  font-weight: 600;
+  color: rgba(0,0,0,0.7);
+}
+
+.fadeup.enterworld {
+  transition: all @story_initiate_time linear;
+  transform: translateY(-10px);
+  .invisible;
+  clear: both;
+}
+
+.new_subtitle {
+  transition: all @story_initiate_time linear;
+  clear: both;
+  font-weight: 600;
+  opacity: 0;
+}
+
+
+// Goals section
+
+
+// "Define" quote section
+#define {
+  background-color: @theme-primary;
+  .quotes {
+  color: @theme-offwhite;
+  }
+  span {
+    color: @white;
+  }
+}
+
+// "I get my hands dirty (my experience) section"
+#experience {
+  .bold {
+    font-weight: 600;
+  }
+}
+
+
+
+
+// Timeline Section
+
+#experience .row {
+  width: 70%;
+  position: relative;
+}
+
+.timeline-row {
+  margin-top: 6%;
+}
+
+.timeline-row > div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.timeline-left {
+  width: 30%;
+  position: relative;
+  p {
+    text-align: right;
+    margin-right: 40px;
+  }
+  span {
+    font-size: 12px;
+  }
+}
+
+
+.timeline-left p::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background-color: @gray-light;
+  border: 1px solid @theme-offwhite;
+  display: block;
+  top: 28px;
+  right: 0px;
+  position: absolute;
+  z-index: 1;
+}
+
+.timeline-vertical-line {
+  content: "";
+  width: 2px;
+  height: 880px;
+  background-color: @gray-light;
+  display: block;
+  top: 35px;
+  right: 5;
+  position: absolute;
+}
+
+.timeline-right {
+  width: 65%;
+  text-align: left;
+  margin-left: 3%;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+// Footer
+#footer {
+  background-color: @theme-primary;
+  h2, p {
+      color: @theme-primary-lighter;
+  }
+  .btn-footer {
+    .button-variant(@theme-primary;@btn-bg;@white;@theme-primary);
+    color: @theme-primary;
+  }
+}
+
+// Tools
+.invisible {
+  transition: all @story_initiate_time linear;
+  opacity: 0;
+}
+.visible {
+  transition: all @story_initiate_time linear;
+  opacity: 1;
+}
+
+.gh-logo {
+  position: relative;
+  margin: 40px;
+}
+
+.gh-logo img {
+  height:41px;
+  position: absolute;
+  top: -11px;
+  left: -21px;
+}
